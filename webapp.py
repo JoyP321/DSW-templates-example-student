@@ -6,7 +6,7 @@ app = Flask(__name__)
 def render_main():
     return render_template('home.html')
 
-@app.route("/about-us")
+@app.route("/about-us") #annotations tell which function go with which request
 def render_page1():
     return render_template('page1.html')
 
